@@ -1,6 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
+import ErrorBoundary from './ErrorBoundary'
 import './styles.css'
 
 function escapeHtml(str){
@@ -16,7 +17,9 @@ if (!rootEl) {
     const root = createRoot(rootEl)
     root.render(
       <React.StrictMode>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </React.StrictMode>
     )
   } catch (err) {
