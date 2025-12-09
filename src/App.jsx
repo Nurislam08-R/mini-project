@@ -2,7 +2,7 @@ import React from 'react'
 
 function Logo() {
   return (
-    <div className="logo" aria-hidden>
+    <div className="logo" aria-hidden="true">
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="24" height="24" rx="6" fill="#6366f1" />
         <path d="M7 15V9h2l3 4 3-4h2v6" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -44,7 +44,7 @@ export default function App() {
             <a className="btn outline" href="#features">Посмотреть фичи</a>
           </div>
         </div>
-        <div className="hero-decor" aria-hidden>
+        <div className="hero-decor" aria-hidden="true">
           <svg viewBox="0 0 600 200" preserveAspectRatio="none">
             <defs>
               <linearGradient id="g1" x1="0" x2="1">
@@ -52,7 +52,7 @@ export default function App() {
                 <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.08" />
               </linearGradient>
             </defs>
-            <path d="M0,100 C150,200 450,0 600,100 L600 00 L0 0 Z" fill="url(#g1)" />
+            <path d="M0,100 C150,200 450,0 600,100 L600 0 L0 0 Z" fill="url(#g1)" />
           </svg>
         </div>
       </header>
